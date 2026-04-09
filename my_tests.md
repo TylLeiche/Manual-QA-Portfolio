@@ -1,7 +1,6 @@
 # Hillel Calculator Project: Test Documentation
 
-[cite_start]This repository contains test documentation for the **Hillel Calculator** application[cite: 1]. [cite_start]The primary goal is to verify the addition functionality for integers within the range of `-99` to `99`[cite: 3, 4].
-
+This repository contains test documentation for the **Hillel Calculator** application. The primary goal is to verify the addition functionality for integers within the range of `-99` to `99`
 ## 📋 Test Cases (Manual Testing)
 
 | ID | Title | Priority |
