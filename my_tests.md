@@ -1,152 +1,76 @@
-\# Hillel Calculator Project: Test Documentation
+# Hillel Calculator Project: Test Documentation
 
+[cite_start]This repository contains test documentation for the **Hillel Calculator** application[cite: 1]. [cite_start]The primary goal is to verify the addition functionality for integers within the range of `-99` to `99`[cite: 3, 4].
 
-
-This repository contains test documentation for the \*\*Hillel Calculator\*\* application. The goal is to verify that the app correctly adds integers within the range of `-99` to `99`.
-
-
-
-\## 📋 Test Cases (Manual Testing)
-
-
+## 📋 Test Cases (Manual Testing)
 
 | ID | Title | Priority |
-
 |:---|:---|:---:|
+| **TC-01** | Verify Successful Addition of Positive Integers | High |
+| **TC-02** | Verify Error Message for Out-of-Range Input | Critical |
+| **TC-03** | Verify "Clear" Button Functionality | Medium |
+| **TC-04** | Verify "Random" Button Functionality | Medium |
+| **TC-05** | Verify "Rows Up/Down" Buttons Functionality | Low |
 
-| \*\*TC-01\*\* | Verify Successful Addition of Positive Integers | High |
+---
 
-| \*\*TC-02\*\* | Verify Error Message for Out-of-Range Input | Critical |
+### TC-01: Verify Successful Addition of Positive Integers
+[cite_start]**Description:** Ensure the app correctly adds two valid positive integers[cite: 5].
 
-| \*\*TC-03\*\* | Verify "Clear" Button Functionality | Medium |
+**Steps:**
+1. [ ] Enter `54` in the first input field.
+2. [ ] Enter `48` in the second input field.
+3. [cite_start][ ] Click the **"Add"** button[cite: 5].
 
-| \*\*TC-04\*\* | Verify "Random" Button Functionality | Medium |
+[cite_start]**Expected Result:** - The result field displays `102`[cite: 8].
 
-| \*\*TC-05\*\* | Verify "Rows Up/Down" Buttons Functionality | Low |
+---
 
+### TC-02: Verify Error Message for Out-of-Range Input
+[cite_start]**Description:** Verify that entering numbers outside the range of -99 to 99 triggers a validation error[cite: 4, 11].
 
+**Steps:**
+1. [ ] Enter `100` in the first input field.
+2. [ ] Enter `5` in the second input field.
+3. [ ] Click the **"Add"** button.
 
-\---
+[cite_start]**Expected Result:** - Error message appears: `"Please input an Integer between -99 and 99 only"`[cite: 11].
+- [cite_start]The input field is highlighted in **red**[cite: 11].
 
+---
 
+### TC-03: Verify "Clear" Button Functionality
+[cite_start]**Description:** Check if the "Clear" button resets all fields[cite: 6].
 
-\### TC-01: Verify Successful Addition of Positive Integers
+**Steps:**
+1. [ ] Enter any valid integers in both fields.
+2. [ ] Click **"Add"**.
+3. [cite_start][ ] Click **"Clear"**[cite: 6].
 
-\*\*Description:\*\* Ensure the app correctly adds two valid positive integers.
+[cite_start]**Expected Result:** - Both input fields and the result field are cleared and become **empty**[cite: 6].
 
+---
 
+### TC-04: Verify "Random" Button Functionality
+[cite_start]**Description:** Ensure the "Random" button generates integers within the allowed range[cite: 7].
 
-\*\*Steps:\*\*
+**Steps:**
+1. [cite_start][ ] Click the **"Random"** button[cite: 7].
 
-1\. \[ ] Enter `54` in the first input field.
+[cite_start]**Expected Result:** - Both fields are populated with random integers between `-99` and `99`[cite: 7].
 
-2\. \[ ] Enter `48` in the second input field.
+---
 
-3\. \[ ] Click the \*\*"Add"\*\* button.
+### TC-05: Verify "Rows Up/Down" Buttons Functionality
+[cite_start]**Description:** Verify that the arrow buttons change the input value by 1[cite: 8].
 
+**Steps:**
+1. [ ] Enter `10` in the first field.
+2. [cite_start][ ] Click the **"Up"** arrow once[cite: 8].
+3. [cite_start][ ] Click the **"Down"** arrow twice[cite: 8].
 
+[cite_start]**Expected Result:** - Value increments to `11` after the "Up" click[cite: 8].
+- [cite_start]Value decrements to `9` after two "Down" clicks[cite: 8].
 
-\*\*Expected Result:\*\* - The result field must display `102`.
-
-
-
-\---
-
-
-
-\### TC-02: Verify Error Message for Out-of-Range Input
-
-\*\*Description:\*\* Check validation when a user enters a number greater than 99.
-
-
-
-\*\*Steps:\*\*
-
-1\. \[ ] Enter `100` in the first input field.
-
-2\. \[ ] Enter `5` in the second input field.
-
-3\. \[ ] Click the \*\*"Add"\*\* button.
-
-
-
-\*\*Expected Result:\*\* - Error message appears: `"Please input an Integer between -99 and 99 only"`.
-
-\- The input field is highlighted in \*\*red\*\*.
-
-
-
-\---
-
-
-
-\### TC-03: Verify "Clear" Button Functionality
-
-\*\*Description:\*\* Check if the form resets correctly.
-
-
-
-\*\*Steps:\*\*
-
-1\. \[ ] Enter `10` and `20` in the input fields.
-
-2\. \[ ] Click \*\*"Add"\*\*.
-
-3\. \[ ] Click \*\*"Clear"\*\*.
-
-
-
-\*\*Expected Result:\*\* - Both input fields and the result field are \*\*empty\*\*.
-
-
-
-\---
-
-
-
-\### TC-04: Verify "Random" Button Functionality
-
-\*\*Description:\*\* Ensure the "Random" button generates values within the allowed range.
-
-
-
-\*\*Steps:\*\*
-
-1\. \[ ] Click the \*\*"Random"\*\* button.
-
-
-
-\*\*Expected Result:\*\* - Both fields are filled with integers between `-99` and `99`.
-
-
-
-\---
-
-
-
-\### TC-05: Verify "Rows Up/Down" Buttons Functionality
-
-\*\*Description:\*\* Check manual increment/decrement of values.
-
-
-
-\*\*Steps:\*\*
-
-1\. \[ ] Enter `10` in the first field.
-
-2\. \[ ] Click the \*\*"Up"\*\* arrow button.
-
-3\. \[ ] Click the \*\*"Down"\*\* arrow button twice.
-
-
-
-\*\*Expected Result:\*\* - Value becomes `11` after the first click.
-
-\- Value becomes `9` after the final click.
-
-
-
-\---
-
-\*Created with ❤️ by TylLeiche as part of QA Learning Path.\*
-
+---
+*Created by TylLeiche for QA Portfolio.*
